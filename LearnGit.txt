@@ -53,6 +53,11 @@ git checkout <branch_name>
 最新版切换分支:
 git switch -c <branch_name>
 
+分支冲突, 需要解决:
+查看log:
+git log
+查看分支合并图:
+git log --graph
 
 
 
