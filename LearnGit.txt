@@ -14,8 +14,9 @@ git diff
 生成ssh-key:
 ssh-keygen -t rsa -C "xxx@example.com"
 
-把git的本地仓库和Github仓库建立关系
+把git的本地仓库和Github仓库建立关系//github的path就是user_name
 git remote add origin git@<server_name>:<path>/<repo_name>.git
+
 
 把本地内容推送到远程仓库
 /*
@@ -28,6 +29,8 @@ git push -u origin master		//第一次推送master分支的所有内容
 git push origin master			//以后就可以使用该命令推送
 
 
+从远程仓库, 克隆一个仓库:
+git clone git@github.com:sysescool/DataStructure.git
 
 
 
