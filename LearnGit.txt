@@ -37,7 +37,32 @@ git branch dev
 git checkout dev
 //git checkout -b dev  // 创建并切换
 
-查看当前分支
+查看当前分支和所有分支
 git branch
+
+合并指定分支到当前分支
+git merge <branch_name>
+
+删除指定分支
+git branch -d <branch_name>
+
+撤销某文件的修改:
+git checkout -- <file>
+切换dev分支:
+git checkout <branch_name>
+最新版切换分支:
+git switch -c <branch_name>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
