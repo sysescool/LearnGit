@@ -11,3 +11,23 @@ git status
 查看文件修改不同:
 git diff
 
+生成ssh-key:
+ssh-keygen -t rsa -C "xxx@example.com"
+
+把git的本地仓库和Github仓库建立关系
+git remote add origin git@<server_name>:<path>/<repo_name>.git
+
+把本地内容推送到远程仓库
+/*
+  由于远程库是空的，我们第一次推送master分支时，加上了-u参数，
+  Git不但会把本地的master分支内容推送的远程新的master分支，
+  还会把本地的master分支和远程的master分支关联起来，
+  在以后的推送或者拉取时就可以简化命令。
+*/
+git push -u origin master		//第一次推送master分支的所有内容
+git push origin master			//以后就可以使用该命令推送
+
+
+
+
+
