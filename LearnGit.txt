@@ -59,7 +59,9 @@ git log
 查看分支合并图:
 git log --graph
 
-
+git的快速合并分支会用Fast forward模式, 这种情况下, 删除分支后, 会丢掉分支信息.
+禁用快速合并模式, merge时就会生成一个新的commit
+git merge --no-ff -m "merge with no-ff" dev
 
 
 
