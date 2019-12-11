@@ -63,7 +63,17 @@ git的快速合并分支会用Fast forward模式, 这种情况下, 删除分支�
 禁用快速合并模式, merge时就会生成一个新的commit
 git merge --no-ff -m "merge with no-ff" dev
 
+暂时保存一下工作现场:
+git stash
 
+修复后, 还原工作现场:
+git stash pop
+
+复制一个特定的提交到当前分支:
+git cherry-pick 4c805e2
+
+丢弃一个没有被合并过的分支
+git branch -D <name>
 
 
 
