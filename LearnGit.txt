@@ -76,6 +76,12 @@ git cherry-pick 4c805e2
 git branch -D <name>
 
 
+****
+编辑git全局配置文件:
+git config -e --global
+
+添加http代理(全局):
+git config --global http.proxy 'http://127.0.0.1:1080'
 
 
 
