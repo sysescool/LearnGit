@@ -83,6 +83,10 @@ git config -e --global
 添加http代理(全局):
 git config --global http.proxy 'http://127.0.0.1:1080'
 
+git在使用过程中, 会遇到换行符的问题,
+参见https://blog.csdn.net/xuewuzhijin2012/article/details/50117181
+我是在编译clang的时候遇到的这个问题:
+git config --global core.autocrlf false
 
 
 
