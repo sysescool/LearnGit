@@ -89,7 +89,8 @@ git在使用过程中, 会遇到换行符的问题,
 git config --global core.autocrlf false
 
 
-
+git tag -a v0.1 -m "Create your first window"
+创建含有tag的提交, 交到github上的话, 就会在release里出现
 
 
 
